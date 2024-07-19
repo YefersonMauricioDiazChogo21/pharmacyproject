@@ -37,11 +37,9 @@
         age int,
         birthdate DATE,
         registration_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-        id_city int NOT NULL,
         id_neighborhood int NOT NULL,
         CONSTRAINT pk_id_customer PRIMARY KEY (id),
         CONSTRAINT fk_id_dnl_type FOREIGN KEY (id_dnl_type) REFERENCES dnltype(id),
-        CONSTRAINT fk_id_city_customer FOREIGN KEY (id_city) REFERENCES city(id),
         CONSTRAINT fk_id_neihgborhood_customer FOREIGN KEY (id_neighborhood) REFERENCES neighborhood(id)
     );
 

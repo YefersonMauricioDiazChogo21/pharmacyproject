@@ -1,6 +1,6 @@
 package com.pharmacy.customer.domain.entity;
 
-public class Person {
+public class Customer {
     private int id;
     private int iddocumenttype;
     private String name;
@@ -8,11 +8,12 @@ public class Person {
     private int age;
     private String registration_date;
     private String birthdate;
+    private int idneighborhood;
 
-    public Person() {
+    public Customer() {
     }
-    public Person(int id, int iddocumenttype, String name, String lastname, int age, String registration_date,
-    String birthdate) {
+    public Customer(int id, int iddocumenttype, String name, String lastname, int age, String registration_date,
+    String birthdate,int idneighborhood) {
         this.id = id;
         this.iddocumenttype = iddocumenttype;
         this.name = name;
@@ -20,6 +21,7 @@ public class Person {
         this.age = age;
         this.registration_date = registration_date;
         this.birthdate = birthdate;
+        this.idneighborhood = idneighborhood;
     }
     public int getId() {
         return id;
@@ -62,6 +64,12 @@ public class Person {
     }
     public void setBirthdate(String birthdate) {
         this.birthdate = birthdate;
+    }
+    public int getIdneighborhood() {
+        return idneighborhood;
+    }
+    public void setIdneighborhood(int idneighborhood) {
+        this.idneighborhood = idneighborhood;
     }
 
     

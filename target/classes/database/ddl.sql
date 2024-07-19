@@ -26,6 +26,7 @@
     CREATE TABLE dnltype(
         id int AUTO_INCREMENT,
         type_document VARCHAR(10) NOT NULL,
+        description_document VARCHAR(20) NOT NULL,
         CONSTRAINT pk_id_dnltype PRIMARY KEY(id)
     );
 
